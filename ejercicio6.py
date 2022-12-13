@@ -3,7 +3,7 @@ import numpy as np
 def pedir_numero():
     while True:
         try:
-            n = int(input("Introduce un número: "))
+            n = int(input("Introduce un número para determinar el orden de la matriz: "))
             return n
         except ValueError:
             print("Error. Introduce un número entero")
@@ -23,8 +23,8 @@ def rotar_anticlockwise(matriz):
 def main():
     n = pedir_numero()
     matrix = matriz(n)
-    print(matrix)
-    print(rotar_clockwise(matrix))
+    print(matrix, '\n')
+    print(rotar_clockwise(matrix), '\n')
     print(rotar_anticlockwise(matrix))
 
 if __name__ == '__main__':
