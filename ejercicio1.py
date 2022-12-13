@@ -15,10 +15,12 @@ def lista_a_string(palabra):
 def main():
     palabra = input('Ingrese una palabra: ')
     palabra = separar_kword(palabra)
-    palabra = sacar_mensaje(palabra)
-    palabra = lista_a_string(palabra)
-    print(palabra)
+    if '' in palabra[:1]:
+        print('No se puede ingresar un # en medio del mensaje') 
+    else:
+        palabra = sacar_mensaje(palabra)
+        palabra = lista_a_string(palabra)
+        print(palabra)
 
 if __name__ == '__main__':
     main()
-    
