@@ -25,3 +25,6 @@ def lucky_ticket():
         
 def main():
     print(lucky_ticket())
+
+if __name__ == '__main__':
+    main()
