@@ -10,8 +10,8 @@ def lucky_ticket():
     numero2 = pedir_numero()
     numero = num_lista(numero2) 
     if len(numero) % 2 == 0:
-        numero1 = numero[:len(numero)/2]
-        numero2 = numero[len(numero)/2:]
+        numero1 = numero[:int(len(numero)/2)]
+        numero2 = numero[int(len(numero)/2):]
         suma1 = sum(numero1)
         suma2 = sum(numero2)
         if suma1 == suma2:
@@ -19,8 +19,8 @@ def lucky_ticket():
         else:
             return False
     else:
-        numero1 = numero[:(len(numero)+1)/2]
-        numero2 = numero[(len(numero)-1)/2:]
+        numero1 = numero[:int((len(numero)+1)/2)]
+        numero2 = numero[int((len(numero)-1)/2):]
         suma1 = sum(numero1)
         suma2 = sum(numero2)
         if suma1 == suma2:
