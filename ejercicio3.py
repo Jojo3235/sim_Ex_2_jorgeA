@@ -3,7 +3,7 @@ import math
 def fibonacci(n):
     a = (1+math.sqrt(5))/2 
     b = (1-math.sqrt(5))/2 
-    Edf = a**n + b**n
+    Edf = (1/math.sqrt(5))*a**n + (-1/math.sqrt(5))*b**n
     return Edf
 
 def main():
